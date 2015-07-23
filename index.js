@@ -33,8 +33,8 @@ var linkMenuItem = contextMenu.Item({
 });
 
 var pageMenuItem = contextMenu.Item({
-    label: "Watch with MPV",
-    context: contextMenu.PageContext()
+    label: "Watch page with MPV",
+    context: contextMenu.PageContext(),
     contentScript: 'self.on("click", function(node,data){self.postMessage();})',
     accessKey: "e",
     image: data.url("icon_button.png"),
@@ -42,7 +42,7 @@ var pageMenuItem = contextMenu.Item({
 });
 
 var action_button = ui.ActionButton({
-    id: "my-button",
+    id: "mpv-firefox",
     label: "Play with MPV",
     icon: data.url("icon_button.png"),
     onClick: play_current_url

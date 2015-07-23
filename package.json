@@ -1,11 +1,10 @@
 {
-    "name": "mpv-youtube-dl-binding", 
-    "license": "MIT", 
-    "author": "Antoniy Chonkov", 
-    "version": "0.1.alpha2", 
-    "id": "jid1-6NrUw49Z9jFVxg", 
-    "description": "Watch flash videos from various sites using native player (like mpv) and youtube-dl.",
-    "homepage": "https://github.com/antoniy/mpv-youtube-dl-binding",
+    "name": "mpv-firefox",
+    "license": "MIT",
+    "author": "IGI-111",
+    "version": "0.1.0",
+    "description": "Watch  videos from various sites using a native player.",
+    "homepage": "https://github.com/IGI-111/mpv-firefox",
     "icon": "data/icon_button.png",
     "permissions": {
         "private-browsing": true
@@ -17,13 +16,6 @@
             "description": "Specify native player executable full path",
             "type": "string",
             "value": "/usr/bin/mpv"
-        },
-        {
-            "name": "hotkey",
-            "title": "Hotkey",
-            "description": "Specify hotkey binding to start the player for current page",
-            "type": "string",
-            "value": "accel-alt-m"
         },
         {
             "name": "params",
